@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7ff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --vh: 1vh;
+}
+
+html, body {
+  height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Thêm các media queries ở cuối file */
+
+@media (max-width: 1200px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Điều chỉnh layout trang Shopping */
+  .shopping-grid {
+    flex-direction: column;
+  }
+  
+  .shopping-grid > .MuiGrid-item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Chatbot */
+  .chatbot-panel {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-title {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-user-info {
+    display: none !important;
+  }
+  
+  /* Auth Page */
+  .auth-paper {
+    padding: 16px !important;
+  }
+  
+  .auth-tabs .MuiTab-root {
+    min-width: auto;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+  
+  /* Admin Page */
+  .admin-tabs {
+    overflow-x: auto;
+  }
+  
+  .product-form-grid .MuiGrid-item {
+    width: 100%;
+  }
+  
+  /* Shopping Page */
+  .shopping-input-section {
+    padding: 8px;
+  }
+  
+  .input-mode-toggle {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  .plu-input-grid .MuiGrid-item {
+    width: 100%;
+  }
+  
+  .invoice-section {
+    padding: 12px;
+  }
+  
+  /* Chatbot */
+  .chatbot-panel {
+    width: 300px;
+    height: 400px;
+    bottom: 80px;
+    right: 12px;
+  }
+  
+  .fab-chatbot {
+    width: 56px;
+    height: 56px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Payment Modal */
+  .payment-modal {
+    width: 95%;
+    padding: 16px;
+  }
+  
+  /* Shopping Page */
+  .shopping-header {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .input-section-title {
+    font-size: 1.1rem;
+  }
+  
+  .manual-add-button, .plu-add-button {
+    height: 48px;
+    font-size: 0.8rem;
+  }
+  
+  /* Chatbot */
+  .chatbot-panel {
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 60px;
+    border-radius: 0;
+  }
+  
+  .chat-message {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Auth Page */
+  .auth-paper {
+    width: 95%;
+    max-width: 95%;
+  }
+  
+  /* Admin Page */
+  .admin-table-cell {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .admin-action-cell {
+    padding: 8px 4px;
+  }
+  
+  /* Shopping Page */
+  .shopping-input-container {
+    padding: 16px;
+  }
+  
+  .barcode-input, .plu-input, .weight-input {
+    font-size: 1rem;
+    height: 48px;
+  }
+  
+  .invoice-list {
+    max-height: 200px;
+  }
+  
+  .checkout-button {
+    height: 48px;
+  }
+  
+  /* Chatbot */
+  .chat-header {
+    padding: 8px;
+  }
+}
+
+/* Thêm vào cuối file */
+@media (max-width: 480px) {
+  .auth-buttons-grid .MuiButton-root {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    min-height: 36px;
+  }
+  
+  .auth-buttons-grid .MuiButton-startIcon {
+    margin-right: 4px;
+  }
+  
+  .auth-buttons-grid .MuiButton-startIcon > * {
+    font-size: 0.9rem;
+  }
+  
+  /* Điều chỉnh QR code trên mobile */
+  .auth-paper .qr-code-container svg {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+/* Thêm vào cuối file */
+@media (max-width: 600px) {
+  .auth-right-buttons {
+    flex-direction: row;
+    margin-top: 8px;
+  }
+  
+  .auth-right-buttons .MuiButton-root {
+    min-height: 36px;
+    padding: 4px 8px;
+  }
+  
+  .auth-right-buttons .MuiButton-startIcon {
+    margin-right: 4px;
+  }
+  
+  .auth-right-buttons .MuiButton-startIcon > * {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-right-buttons .MuiButton-root {
+    font-size: 0.65rem;
+  }
+}
+
+/* ======================== Điều chỉnh cho màn hình 7 inch (1024x600) ======================== */
+@media (max-width: 1024px) and (max-height: 600px) {
+  body {
+    overflow: auto;
+    font-size: 14px;
+  }
+
+  .shopping-container {
+    padding: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .shopping-grid {
+    flex-direction: column;
+  }
+
+  .input-section, .invoice-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .shopping-input-section, .invoice-paper {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .chatbot-panel {
+    width: 320px;
+    height: 380px;
+    bottom: 70px;
+    right: 10px;
+  }
+
+  .fab-chatbot {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .admin-container {
+    padding: 8px;
+  }
+
+  .auth-paper {
+    padding: 16px;
+    max-width: 90%;
+  }
+
+  .auth-tabs .MuiTab-root {
+    min-width: auto;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+}
