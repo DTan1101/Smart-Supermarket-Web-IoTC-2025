@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: my-flask-app
+    env: python
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app_flask:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # bạn sẽ nhập API key trực tiếp trong dashboard Render (Secrets)
+      - key: GEMINI_MODEL
+        value: "gemini-2.0-flash-exp"   # hoặc gemini-1.5-flash, gemini-1.5-pro, ...
+      - key: FLASK_DEBUG
+        value: "false"
