@@ -1,0 +1,10 @@
+source myenv_cv/bin/activate
+python /home/pi/Desktop/Yolo_anhtinh.py /home/pi/Desktop/best.onnx /home/pi/Desktop/frame11.png 320
+
+python3 zopi.py /dev/serial0 /home/pi/Desktop/best.onnx 320 ./out 
+
+export SCAN_BARCODE_URL="http://127.0.0.1:5000/scan-barcode" #note dùng để test api từ đây
+python3 zopi.py /dev/serial0 /home/pi/Desktop/best.onnx 320 ./out
+
+curl http://127.0.0.1:5000/last-barcode
+
