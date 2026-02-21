@@ -1,71 +1,26 @@
-# Smart Supermarket Web IoT 2025
+# Smart Supermarket Web IoTC 2025
 
-## Project Overview
-Smart Supermarket Web IoT 2025 is an innovative project aimed at revolutionizing the shopping experience by leveraging Internet of Things (IoT) technologies. It provides a seamless integration of smart devices to enhance customer engagement, streamline operations, and gather data analytics to improve decision-making.
+## Project Description
+The Smart Supermarket Web IoTC 2025 project aims to revolutionize the shopping experience by integrating Internet of Things (IoT) technologies into traditional supermarket operations. This web-based application facilitates smart inventory management, enhances customer interactions, and optimizes supply chain processes through real-time data analysis and automated systems.
 
-## Architecture
-The architecture is designed with modular components that allow for scalability and flexibility. The system consists of:
-- **Frontend**: A responsive web interface built using modern JavaScript frameworks.
-- **Backend**: A robust server-side application developed with Node.js, handling API requests and data processing.
-- **Database**: A cloud-based database solution that stores user data, product information, sales records, and analytics.
-- **IoT Devices**: Smart devices integrated with sensors and communication technologies (like RFID) to track inventory and customer behavior.
+### Features
+- **Smart Inventory Management**: Track inventory levels in real-time, automate reordering, and minimize wastage.
+- **Customer Interaction**: Provide personalized recommendations and offers based on shopping history and preferences.
+- **Supply Chain Optimization**: Streamline operations by analyzing supply chain data and predicting demand trends.
+- **User-Friendly Interface**: An intuitive web application that enhances user experience and simplifies navigation.
 
-## Features
-- User-friendly interface for easy navigation.
-- Real-time inventory tracking and notifications.
-- Personalized offers and discounts based on customer behavior.
-- Advanced analytics dashboard for store management.
-- Integration with payment gateways for seamless checkout.
+### Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **IoT Integration**: Raspberry Pi, sensors, and cloud connectivity
 
-## Technologies
-- **Frontend**: React, Vue.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, Firebase
-- **IoT**: MQTT protocol, Raspberry Pi
-- **Deployment**: Docker, AWS
+### Installation
+To set up the project locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/DTan1101/Smart-Supermarket-Web-IoTC-2025.git`
+2. Navigate to the project directory: `cd Smart-Supermarket-Web-IoTC-2025`
+3. Install dependencies: `npm install`
+4. Run the application: `npm start`
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DTan1101/Smart-Supermarket-Web-IoTC-2025.git
-   cd Smart-Supermarket-Web-IoTC-2025
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the server:
-   ```bash
-   npm start
-   ```
-
-## Usage
-To use the Smart Supermarket Web IoT system:
-1. Open the web application in your browser.
-2. Create an account or log in with your credentials.
-3. Navigate through the products, add them to your cart, and proceed to checkout.
-4. Monitor the smart device notifications and analytics.
-
-## Project Structure
-```
-Smart-Supermarket-Web-IoTC-2025/
-├── frontend/         # Frontend code
-├── backend/          # Backend code
-├── docs/            # Documentation
-└── tests/           # Test cases
-```
-
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-For more information, visit our [documentation](docs/README.md).
+### Getting Started
+Refer to the documentation for detailed instructions on setting up and using the application.
